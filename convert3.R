@@ -1,6 +1,6 @@
 ##############################################################################
 # titile        : combcert1.R;
-# purpose       : convert from 14°10.508' (Degree Minute) N to 14.175133 (Decimal Degree);
+# purpose       : convert from 14,10.508' (Degree, Minute) N to 14.175133 (Decimal Degree);
 # producer      : Sith Jaisong and A. H. Sparks;
 #                 Plant Disease Management team
 #                 CESD, IRRI;
@@ -16,9 +16,9 @@
 
 require(stringr)
 
-data <- read.csv(file = file.path("~/Documents/R.github/convert-DG/data1.csv"), header= T, stringsAsFactor = F) # change the file.path whare your files are 
+data <- read.csv(file = file.path("~/Documents/R.github/convert-DG/data3.csv"), header= T, stringsAsFactor = F) # change the file.path whare your files are 
 
-head(data) # this is the format like like 14°10.480' N 
+head(data) # this is the format like 14°10.480' N 
 
 names(data)
 N = 6 # difine what is the column that you want to convert Lat or Long but they should be adcent coulumn
